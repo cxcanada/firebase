@@ -1,14 +1,30 @@
-import firebase from '../firebase'
+import Button from "../components/ui/button";
+import GoogleProvider from "components/auth/providers/google";
 
-import NavBar from '../components/navbar'
-import Brand from './../components/branding'
+function Home(){
 
-export default function Home() {
-  console.log(firebase)
+  const props = {
+    bgcolor="tomato", color="white"
+  }
+
   return (
     <div>
-      <NavBar/>
-      <Brand title="Home Page" tagline="directory app start"/>
+      <Button bgcolor="tomato" color="white">Sign up with firebase</Button>
+      <Button bgcolor="blue" color="white">Sign up with something</Button>
+      <GoogleProvider></GoogleProvider>
     </div>
   )
 }
+
+function Jim(props) {
+  function handleClick(e){
+    console.log(e.currentTarget)
+  }
+    return (
+      <div>
+        <button onClick={handleClick}>jim</button>
+      </div>
+    )
+  }
+  
+  export default Jim

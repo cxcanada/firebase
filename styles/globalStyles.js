@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components"
+const GlobalStyles = createGlobalStyle `
 /*!
  * Bootstrap Reboot v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -352,3 +354,6 @@
  }
  
  
+`
+
+export default GlobalStyles
